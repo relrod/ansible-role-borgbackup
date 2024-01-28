@@ -17,6 +17,7 @@ borg_retention_policy:
   keep_weekly: 4
   keep_monthly: 6
 borg_version: false
+borg_archive_name_format: "{hostname}-{now:%Y-%m-%d-%H%M%S}"
 borgmatic_timer_cron_name: "borgmatic"
 borgmatic_timer: cron
 borgmatic_timer_hour: "{{ range(0, 5) | random(seed=inventory_hostname) }}"

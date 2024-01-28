@@ -114,6 +114,10 @@ argument_specs:
       borgmatic_relocated_repo_access_is_ok:
         type: bool
         description: Bypass Borg error about a repository that has been moved.
+      borg_archive_name_format:
+        type: str
+        required: false
+        description: Archive name format
       borg_retention_policy:
         keep_secondly:
           type: int
